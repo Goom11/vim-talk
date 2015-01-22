@@ -26,6 +26,5 @@ call vundle#end()
 
 filetype plugin indent on
 
-colorscheme base16-atelierdune
-
-
+set background=dark
+colorscheme base16-solarized
