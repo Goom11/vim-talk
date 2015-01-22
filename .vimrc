@@ -10,16 +10,16 @@ call vundle#begin()
     Plugin 'gmarik/Vundle.vim'
 
     " sensible defaults for vim
-    " Plugin 'tpope/vim-sensible'
+    Plugin 'tpope/vim-sensible'
 
     " colorschemes
-    " Plugin 'chriskempson/base16-vim'
+    Plugin 'chriskempson/base16-vim'
 
     " code completion
     " Plugin 'Valloric/YouCompleteMe'
 
     " syntax checker
-    " Plugin 'scrooloose/syntastic'
+    Plugin 'scrooloose/syntastic'
 
 
 call vundle#end()
