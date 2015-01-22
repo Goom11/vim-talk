@@ -19,7 +19,7 @@ call vundle#begin()
     " Plugin 'Valloric/YouCompleteMe'
 
     " syntax checker
-    Plugin 'scrooloose/syntastic'
+    " Plugin 'scrooloose/syntastic'
 
 
 call vundle#end()
