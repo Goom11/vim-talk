@@ -4,9 +4,9 @@ echo "Copying ~/.vimrc to ~/.vimrc.bak for backup
 cp ~/.vimrc ~/.vimrc.bak
 
 echo "Copying ~/.vim to ~/.vim.bak for backup
-cp -r ~/.vim ~/.vim.back
+cp -r ~/.vim ~/.vim.bak
 
-rm -r ~/.vim
+rm -rf ~/.vim
 
 mkdir -p ~/.vim/bundle
 
