@@ -1,16 +1,21 @@
 #!/usr/bin/env bash
 
-echo "Copying ~/.vimrc to ~/.vimrc.bak for backup"
-cp ~/.vimrc ~/.vimrc.bak
+echo "Moving ~/.vimrc to ~/.vimrc.bak for backup"
+mv ~/.vimrc ~/.vimrc.bak
 
-echo "Copying ~/.vim to ~/.vim.bak for backup"
-cp -r ~/.vim ~/.vim.bak
+echo "Moving ~/.vim to ~/.vim.bak for backup"
+mv ~/.vim ~/.vim.bak
 
-rm -rf ~/.vim
+echo "Replacing old .vimrc with this .vimrc"
+cp .vimrc ~/.vimrc
 
+echo "Creating a .vim directory"
 mkdir -p ~/.vim/bundle
 
+echo "Cloning Vundle repo for vim plugin management"
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+echo "Installing Plugins"
 vim +PluginInstall +qall
 
+echo "All Done!"
