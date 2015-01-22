@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-echo "Copying ~/.vimrc to ~/.vimrc.bak for backup
+echo "Copying ~/.vimrc to ~/.vimrc.bak for backup"
 cp ~/.vimrc ~/.vimrc.bak
 
-echo "Copying ~/.vim to ~/.vim.bak for backup
+echo "Copying ~/.vim to ~/.vim.bak for backup"
 cp -r ~/.vim ~/.vim.bak
 
 rm -rf ~/.vim
